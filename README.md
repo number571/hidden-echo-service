@@ -33,7 +33,7 @@ cd client && ./hls
 Do request:
 ```bash
 curl -i -X POST http://localhost:9572/api/network/request --data '{
-    "receiver":"serivce-node",
+    "receiver":"service-node",
     "req_data":{
         "method":"POST",
         "host":"hidden-echo-service",
@@ -54,6 +54,6 @@ Content-Length: 102
 ```
 
 ```bash
-echo "ZWNobyhoZWxsbywgd29ybGQhKQ" | base64 -d
+echo "ZWNobyhoZWxsbywgd29ybGQhKQ==" | base64 -d
 # echo(hello, world!)
 ```
