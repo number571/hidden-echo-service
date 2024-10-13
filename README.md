@@ -6,7 +6,7 @@ Example of simple application in the «Hidden Lake» anonymity network. The conf
 ### Download HLS
 
 ```bash
-wget https://github.com/number571/go-peer/releases/latest/download/hls_amd64_linux
+wget https://github.com/number571/hidden-lake/releases/latest/download/hls_amd64_linux
 mv hls_amd64_linux hls
 chmod +x hls
 cp hls client/hls
