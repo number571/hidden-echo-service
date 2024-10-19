@@ -6,27 +6,27 @@ Example of simple application in the «Hidden Lake» anonymity network. The conf
 ### Download HLS
 
 ```bash
-wget https://github.com/number571/hidden-lake/releases/latest/download/hls_amd64_linux
-mv hls_amd64_linux hls
-chmod +x hls
-cp hls client/hls
+$ wget https://github.com/number571/hidden-lake/releases/latest/download/hls_amd64_linux && \
+    mv hls_amd64_linux hls && \
+    chmod +x hls && \
+    cp hls client/hls
 ```
 
 ### Running
 
 Terminal 1 (running echo-service):
 ```bash
-go run ./main.go
+$ go run ./main.go
 ```
 
 Terminal 2 (running HLS service-node):
 ```bash
-./hls
+$ ./hls
 ```
 
 Terminal 3 (running HLS client-node):
 ```bash
-cd client && ./hls
+$ cd client && ./hls
 ```
 
 ### Request
