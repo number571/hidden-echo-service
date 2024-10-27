@@ -11,8 +11,7 @@ logging:
 address:
   http: 127.0.0.1:9571
 services:
-  hidden-echo-service:
-    host: 127.0.0.1:8080
+  hidden-echo-service: 127.0.0.1:8080
 connections:
 - 94.103.91.81:9581
 friends:
