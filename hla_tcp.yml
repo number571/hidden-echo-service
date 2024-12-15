@@ -1,0 +1,14 @@
+settings:
+  message_size_bytes: 8192
+  work_size_bits: 22
+  network_key: 8Jkl93Mdk93md1bz
+logging:
+ - info
+ - warn
+ - erro
+address:
+  internal: 127.0.0.1:9540
+endpoints:
+- 127.0.0.1:9541
+connections:
+- 94.103.91.81:9581

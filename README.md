@@ -1,15 +1,14 @@
 # hidden-echo-service
-> https://habr.com/ru/articles/839950/
 
 Example of simple application in the «Hidden Lake» anonymity network. The configuration file of the production environment is used. 
 
 ### Download HLS
 
 ```bash
-$ wget https://github.com/number571/hidden-lake/releases/latest/download/hls_amd64_linux && \
-    mv hls_amd64_linux hls && \
-    chmod +x hls && \
-    cp hls client/hls
+$ wget https://github.com/number571/hidden-lake/releases/latest/download/hlc_amd64_linux && \
+    mv hlc_amd64_linux hlc && \
+    chmod +x hlc && \
+    cp hlc client/hlc
 ```
 
 ### Running
@@ -19,21 +18,21 @@ Terminal 1 (running echo-service):
 $ go run ./main.go
 ```
 
-Terminal 2 (running HLS service-node):
+Terminal 2 (running HLC service-node):
 ```bash
-$ ./hls
+$ ./hlc
 ```
 
-Terminal 3 (running HLS client-node):
+Terminal 3 (running HLC client-node):
 ```bash
-$ cd client && ./hls
+$ cd client && ./hlc
 ```
 
 ### Request
 
 Do request:
 ```bash
-curl -i -X POST http://localhost:9572/api/network/request --data '{
+curl -i -X POST http://localhost:9532/api/network/request --data '{
     "receiver":"service-node",
     "req_data":{
         "method":"POST",

@@ -1,0 +1,7 @@
+logging:
+- info
+- warn
+- erro
+services:
+- hidden-lake-adapter=tcp
+- hidden-lake-service
